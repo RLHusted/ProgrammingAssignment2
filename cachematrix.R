@@ -37,7 +37,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
     #retreive m
     #print(x)
-    m <- x$getinv()   #$ operator is invalid for atomic vectors
+    m <- x$getinv()
    
     # check if mean is already stored and return value as m if it is
     if(!is.null(m)) {
